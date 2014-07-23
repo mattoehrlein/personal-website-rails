@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on("ready page:change", function(){
 	// The DOM (document object model) is constructed
 	// We will initialize and run our plugin here
 	// Prepare layout options.
@@ -43,6 +43,7 @@ $(document).ready(function(){
 
 });
 
+
 var generateQuote = function(){
 	
 	var quotes = new Array();
@@ -71,5 +72,5 @@ function quote(text,person,size){
 	this.person = person;
 	this.size = size; 
 }
-
+	
 
