@@ -14,7 +14,7 @@
 		<p>
 			Hi. Since you're on this site, you probably want to learn something about me.
 			You've come to the right place. My vision is for this site to function as
-			an interactive resumé built for the age of the internet. Why do we still use paper resumés anyway?
+			an interactive résumé built for the age of the internet. Why do we still use paper résumés anyway?
 		</p>
 		</div> <!-- end "About" -->
 		<h2>Experience:</h2>
@@ -48,6 +48,13 @@
 		</div>
 		<div id="projects-container" role="projects-container">
 			<ul id="projects-tiles">
+			<li>
+				<div class="project-overlay"><%=link_to raw("<span></span>"), megabots_path %> 
+					<div class="project-overlay-header">MegaBots, Inc.</div>
+					<div class="project-overlay-text">A giant robot combat sports league</div>
+				</div>
+				<%=image_tag 'megabots.jpg' %>
+			</li>
 			<li>
 			<div class="project-overlay"><%=link_to raw("<span></span>"), mindflame_path %> 
 					<div class="project-overlay-header">Mind Flame</div>
