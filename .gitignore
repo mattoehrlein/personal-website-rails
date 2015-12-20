@@ -12,15 +12,6 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/log/*
+!/log/.keep
 /tmp
-
-# Ignore other unneeded files.
-database.yml
-doc/
-*.swp
-*~
-.project
-.DS_Store
-.idea
-.secret

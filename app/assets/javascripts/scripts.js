@@ -6,41 +6,6 @@ $(document).on("ready page:change", function(){
 	// Generate a new quote
 	generateQuote();
 
-
-	var options = {
-		autoResize : true, // This will auto-update the layout when the browser window is resized.
-		container : $('#projects-container'), // Optional, used for some extra CSS styling
-		offset : 15, // Optional, the distance between grid items
-		itemWidth : 330, // Optional, the width of a grid item
-		resizeDelay: 50
-	};
-	// Get a reference to your grid items.
-	var handler = $('#projects-tiles li');
-	// Call the layout function.
-	handler.wookmark(options);
-	
-	$('#contact-container').waypoint(function(event){
-		$(this).animate({'left':'0px','opacity':1},"slow");
-	},{
-		triggerOnce: true,
-		offset: '95%'
-	});
-	
-	
-	//config fadeout on click
-	$('.project-overlay').click(function(){
-    	var url=$(this).find("a").attr("href"); 
-    	$('#content').fadeOut("fast",function(){
-    		location.href = url;
-    	});
-    	
-    	//Prevent default browser click behavior
-    	return true;
-	});
-	
-	//slide in the back button
-	$('.back').animate({'left':'30px','opacity':1},"slow");
-
 });
 
 

@@ -1,0 +1,19 @@
+<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-xs" role="navigation">
+  <%= link_to "<h1>MATT OEHRLEIN</h1>".html_safe, root_path, class: "navmenu-brand" %>
+  <ul class="nav navmenu-nav">
+    <li><a href="https://www.facebook.com/matt.oehrlein" target="_blank">FACEBOOK</a></li>
+    <li><a href="https://www.instagram.com/buildandbreak/" target="_blank">INSTAGRAM</a></li>
+    <li><a href="https://www.linkedin.com/in/mattoehrlein" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://twitter.com/mattoehrlein" target="_blank">TWITTER</a></li>
+    <li><%= mail_to "matt.oehrlein@gmail.com", "EMAIL" %></li>
+  </ul>
+</nav>
+<div id="background-overlay"></div>
+<div class="navbar navbar-default navbar-fixed-top">
+  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
