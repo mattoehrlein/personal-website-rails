@@ -57,4 +57,5 @@ group :production do
   gem 'rails_12factor'
   gem 'newrelic_rpm'
   gem 'puma'
+  gem 'sitemap_generator'
 end
