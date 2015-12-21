@@ -32,3 +32,13 @@ video#bgvideo {
     background: url(<%= asset_path "videobackground.png"%>) no-repeat;
     background-size: cover; 
 }
+
+// Hide the background video for most phones
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(<%= asset_path "mattbackground.jpg"%>) #000 no-repeat center center fixed;
+    }
+    #bgvideo {
+        display: none;
+    }
+}
