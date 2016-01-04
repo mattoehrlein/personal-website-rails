@@ -16,4 +16,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jasny-bootstrap.min
+//= require jquery.textillate
+//= require jquery.lettering
+//= require jquery.fittext
 //= require_tree .
